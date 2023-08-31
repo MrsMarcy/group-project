@@ -13,5 +13,25 @@ body {
 }
 
 /* nav bar*/
+.sideBar {
+  height: 100px;
+  display: flex;
+  flex-flow: column nowrap;
+}
+.sideBar .menuIcon {
+  color: #FFFFFF;
+}
+.sideBar .pageCount {
+  color: #FFFFFF;
+}
+.sideBar .trademark {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #FFFFFF;
+  transform-origin: 0, 0;
+  transform: rotate(-90deg);
+}
+
 /* main card*/
 /* side cards*//*# sourceMappingURL=style.css.map */

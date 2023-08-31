@@ -11,7 +11,28 @@ body {
     display: inline-flex;
 }
 /* nav bar*/
+.sideBar{
+    height: 100px;
+    display: flex;
+    flex-flow: column nowrap;
 
+    .menuIcon{
+        color: var.$textcolor;
+    }
+
+    .pageCount{
+        color: var.$textcolor;
+    }
+
+    .trademark{
+        position: absolute;
+        bottom: 0 ;
+        left: 0;
+        color: var.$textcolor;
+        transform-origin: 0,0;
+        transform: rotate(-90deg);
+    }
+}
 /* main card*/
 
 /* side cards*/
