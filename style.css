@@ -9,6 +9,21 @@ body {
   background: url(images/back-color.png);
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+}
+
+card-holder {
+  display: inline-flex;
+}
+
+.contentHolder {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.homebar, .sideBar, .card-holder, .titleHolder {
+  border: 2px solid black;
 }
 
 /* nav bar*/
