@@ -22,3 +22,17 @@ body {
     border:var.$cardB;
     border-radius: var.$cardR;
 }
+#card1 {
+    color: white;
+    .bottom-tag {
+        color: #7B92A8;
+    }
+}
+#card2 {
+    background-image: url(/images/lime.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#card3 {
+    background-color: #B9F3FB;
+}
