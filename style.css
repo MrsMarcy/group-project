@@ -1,4 +1,5 @@
 body {
+  font-family: "Heebo";
   margin: 0;
   padding: 0;
   border: 0;
@@ -11,6 +12,6 @@ body {
   display: inline-flex;
 }
 
-h1 {
-  font-family: "Heebo";
-}/*# sourceMappingURL=style.css.map */
+/* nav bar*/
+/* main card*/
+/* side cards*//*# sourceMappingURL=style.css.map */
