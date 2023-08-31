@@ -12,10 +12,6 @@ body {
   display: flex;
 }
 
-card-holder {
-  display: inline-flex;
-}
-
 .contentHolder {
   display: flex;
   flex-direction: column;
