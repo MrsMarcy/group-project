@@ -12,10 +12,14 @@ body {
   display: flex;
 }
 
+.sideBar {
+  width: 10%;
+}
+
 .contentHolder {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 90%;
 }
 
 .homebar, .sideBar, .card-holder, .titleHolder {
@@ -24,6 +28,44 @@ body {
 
 /* nav bar*/
 /* main card*/
+.titleHolder {
+  margin: 100px 50px 200px 50px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.titleHolder > img {
+  position: absolute;
+  width: 400px;
+  top: -100px;
+  right: 20px;
+  z-index: -1;
+}
+
+.titleHolderBox {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  width: 780px;
+}
+
+.titleHolderBox img {
+  position: absolute;
+  bottom: -40px;
+  left: 10px;
+  width: 200px;
+  z-index: -1;
+}
+
+.titleHolderBox h1 {
+  font-size: 4.2em;
+  color: white;
+  transform: scale(2, 1);
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
 /* side cards*/
 .card-holder {
   display: inline-flex;
