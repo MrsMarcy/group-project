@@ -7,11 +7,18 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
-.card-holder {
-    display: inline-flex;
-}
+
 /* nav bar*/
 
 /* main card*/
 
 /* side cards*/
+.card-holder {
+    display: inline-flex;
+}
+.cards {
+    width: 400px;
+    height: 300px;
+    border:var.$cardB;
+    border-radius: var.$cardR;
+}

@@ -8,10 +8,16 @@ body {
   background-size: cover;
 }
 
+/* nav bar*/
+/* main card*/
+/* side cards*/
 .card-holder {
   display: inline-flex;
 }
 
-/* nav bar*/
-/* main card*/
-/* side cards*//*# sourceMappingURL=style.css.map */
+.cards {
+  width: 400px;
+  height: 300px;
+  border: 2px solid black;
+  border-radius: 10px;
+}/*# sourceMappingURL=style.css.map */
