@@ -8,10 +8,6 @@ body {
   background-size: cover;
 }
 
-.card-holder {
-  display: inline-flex;
-}
-
 /* nav bar*/
 .sideBar {
   height: 100px;
@@ -34,4 +30,31 @@ body {
 }
 
 /* main card*/
-/* side cards*//*# sourceMappingURL=style.css.map */
+/* side cards*/
+.card-holder {
+  display: inline-flex;
+}
+
+.cards {
+  width: 400px;
+  height: 300px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+#card1 {
+  color: white;
+}
+#card1 .bottom-tag {
+  color: #7B92A8;
+}
+
+#card2 {
+  background-image: url(/images/lime.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#card3 {
+  background-color: #B9F3FB;
+}/*# sourceMappingURL=style.css.map */

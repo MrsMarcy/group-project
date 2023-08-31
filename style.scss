@@ -7,9 +7,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
-.card-holder {
-    display: inline-flex;
-}
+
 /* nav bar*/
 .sideBar{
     height: 100px;
@@ -36,3 +34,26 @@ body {
 /* main card*/
 
 /* side cards*/
+.card-holder {
+    display: inline-flex;
+}
+.cards {
+    width: 400px;
+    height: 300px;
+    border:var.$cardB;
+    border-radius: var.$cardR;
+}
+#card1 {
+    color: white;
+    .bottom-tag {
+        color: #7B92A8;
+    }
+}
+#card2 {
+    background-image: url(/images/lime.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#card3 {
+    background-color: #B9F3FB;
+}
