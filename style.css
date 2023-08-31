@@ -6,4 +6,8 @@ body {
 
 .card-holder {
   display: inline-flex;
+}
+
+h1 {
+  font-family: "Heebo";
 }/*# sourceMappingURL=style.css.map */
