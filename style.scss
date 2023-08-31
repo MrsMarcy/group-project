@@ -1,6 +1,7 @@
 @use "var";
 
 body {
+    font-family: var.$Heebo;
     margin:0; padding:0;border:0;
     background: url(images/back-color.png);
     background-repeat: no-repeat;
@@ -9,9 +10,8 @@ body {
 .card-holder {
     display: inline-flex;
 }
-h1 {
-    font-family: var.$Heebo;
-}
-.cards {
- 
-}
+/* nav bar*/
+
+/* main card*/
+
+/* side cards*/
