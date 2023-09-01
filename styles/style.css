@@ -92,7 +92,7 @@ body {
 /* nav bar*/
 /* main card*/
 .titleHolder {
-  margin: 100px 50px 260px 50px;
+  margin: 100px 50px 250px 50px;
   display: flex;
   justify-content: space-between;
   position: relative;
@@ -100,7 +100,7 @@ body {
 
 .titleHolder > img {
   position: absolute;
-  width: 390px;
+  width: 370px;
   top: -40px;
   right: 20px;
   z-index: -1;
