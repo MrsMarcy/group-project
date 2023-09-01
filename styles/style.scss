@@ -105,15 +105,15 @@ body {
 /* main card*/
 
 .titleHolder {
-    margin: 100px 50px 260px 50px;
+    margin: 100px 50px 250px 50px ;
     display: flex;
     justify-content: space-between;
     position: relative;
 }
 
-.titleHolder>img {
+.titleHolder > img {
     position: absolute;
-    width: 390px;
+    width: 370px;
     top: -40px;
     right: 20px;
     z-index: -1;
@@ -177,9 +177,10 @@ body {
     color: white;
     width: 33.33%;
     padding: auto 200px;
-    >button {
+    .hold > button {
         @extend %whitebutton;
         font-size: 27px;
+    }
     }
     .bottom-tag {
         color: var.$gray;
@@ -187,7 +188,6 @@ body {
         bottom: 0;
         padding-bottom: inherit;
     }
-}
 #card2 {
     position: relative;
     background-image: url(/images/lime.png);

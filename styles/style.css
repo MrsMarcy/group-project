@@ -12,7 +12,7 @@
   background-color: black;
 }
 
-.homebar .webConnect .connectWal, #card1 > button {
+.homebar .webConnect .connectWal, #card1 .hold > button {
   cursor: pointer;
   color: white;
   background: none;
@@ -22,7 +22,7 @@
   border-radius: 50px;
   display: inline-block;
 }
-.homebar .webConnect .connectWal:hover, #card1 > button:hover {
+.homebar .webConnect .connectWal:hover, #card1 .hold > button:hover {
   color: #183f65;
   background-color: white;
 }
@@ -117,7 +117,7 @@ body {
 /* nav bar*/
 /* main card*/
 .titleHolder {
-  margin: 100px 50px 260px 50px;
+  margin: 100px 50px 250px 50px;
   display: flex;
   justify-content: space-between;
   position: relative;
@@ -125,7 +125,7 @@ body {
 
 .titleHolder > img {
   position: absolute;
-  width: 390px;
+  width: 370px;
   top: -40px;
   right: 20px;
   z-index: -1;
@@ -188,10 +188,11 @@ body {
   width: 33.33%;
   padding: auto 200px;
 }
-#card1 > button {
+#card1 .hold > button {
   font-size: 27px;
 }
-#card1 .bottom-tag {
+
+.bottom-tag {
   color: #7B92A8;
   position: absolute;
   bottom: 0;
