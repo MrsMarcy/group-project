@@ -23,6 +23,26 @@ body {
 
 .sideBar {
   width: 5%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+.sideBar .menuIcon, .sideBar .pageCount {
+  flex-grow: 1;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.sideBar .trademark {
+  flex-grow: 2;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: absolute;
+  transform: rotate(-90deg);
+  bottom: -2%;
 }
 
 .contentHolder {

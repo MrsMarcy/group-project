@@ -15,8 +15,27 @@ body {
     display: flex;
 }
 
-.sideBar {
+.sideBar{
     width: 5%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    
+    .menuIcon,.pageCount{
+        flex-grow: 1;
+        width: fit-content;
+    }
+
+    .trademark{
+        flex-grow: 2;
+        height: fit-content;
+        width: fit-content;
+        position: absolute;
+        transform: rotate(-90deg);
+        bottom: -2%;
+    }
 }
 
 .contentHolder {
