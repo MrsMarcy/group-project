@@ -156,7 +156,7 @@ body {
 }
 
 .cards {
-    height: 100%;
+
     border:var.$cardB;
     border-radius: var.$cardR;
     padding: 75px;
@@ -166,8 +166,9 @@ body {
     position: relative;
     color: white;
     width: 33.33%;
-    padding: auto 200px;
-    >button {
+    .hold{
+        margin-bottom: 150px;
+       button {
         cursor: pointer;
         color: white;
         background: none;
@@ -176,7 +177,8 @@ body {
         margin: 5px 3px;
         border: 1px white solid;
         border-radius: 50px;
-        display: inline-block;
+        display: inline-block; 
+    }
     }
     .bottom-tag {
         color: #7B92A8;
