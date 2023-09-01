@@ -25,9 +25,8 @@ body {
     width: 95%;
 }
 
-.homebar,
-.sideBar {
-    border: 2px solid black;
+.homebar,.sideBar{
+    border: var.$cardB;
 }
 
 /* nav bar*/
@@ -92,32 +91,30 @@ body {
 /* side cards*/
 .card-holder {
     display: inline-flex;
+    width: 100%;
 }
 
 .cards {
-    max-width: 400px;
     height: 300px;
     border:var.$cardB;
     border-radius: var.$cardR;
     padding: 60px;
 }
-
 #card1 {
     color: white;
-    width: 400px;
+    width: 33.33%;
 
     .bottom-tag {
         color: #7B92A8;
     }
 }
-
 #card2 {
     background-image: url(/images/lime.png);
     background-repeat: no-repeat;
     background-size: cover;
+    width: 33.33%;
 }
-
 #card3 {
     background-color: #B9F3FB;
-    width: 400px;
+    width: 33.33%;
 }
