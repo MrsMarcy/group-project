@@ -98,6 +98,9 @@ body {
   text-decoration: none;
   color: white;
 }
+.homebar nav a:hover {
+  text-decoration: underline;
+}
 .homebar .webConnect {
   flex-grow: 1;
 }
