@@ -22,18 +22,16 @@ body {
 }
 
 .sideBar {
-  width: 10%;
+  width: 5%;
 }
 
 .contentHolder {
   display: flex;
   flex-direction: column;
-  width: 90%;
+  width: 95%;
 }
 
-.homebar,
-.sideBar,
-.card-holder {
+.homebar, .sideBar {
   border: 2px solid black;
 }
 
@@ -95,10 +93,10 @@ body {
 /* side cards*/
 .card-holder {
   display: inline-flex;
+  width: 100%;
 }
 
 .cards {
-  max-width: 400px;
   height: 300px;
   border: 2px solid black;
   border-radius: 10px;
@@ -107,7 +105,7 @@ body {
 
 #card1 {
   color: white;
-  width: 400px;
+  width: 33.33%;
 }
 #card1 .bottom-tag {
   color: #7B92A8;
@@ -117,9 +115,10 @@ body {
   background-image: url(/images/lime.png);
   background-repeat: no-repeat;
   background-size: cover;
+  width: 33.33%;
 }
 
 #card3 {
   background-color: #B9F3FB;
-  width: 400px;
+  width: 33.33%;
 }/*# sourceMappingURL=style.css.map */
