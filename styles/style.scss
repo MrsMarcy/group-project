@@ -156,7 +156,6 @@ body {
 }
 
 .cards {
-
     border:var.$cardB;
     border-radius: var.$cardR;
     padding: 75px;
@@ -181,19 +180,42 @@ body {
     }
     }
     .bottom-tag {
-        color: #7B92A8;
+        color: var.$gray;
         position: absolute;
         bottom: 0;
         padding-bottom: inherit;
     }
 }
 #card2 {
+    position: relative;
     background-image: url(/images/lime.png);
     background-repeat: no-repeat;
     background-size: cover;
     width: 33.33%;
+    .arrow {
+        position: absolute;
+        bottom: 0;
+        padding-bottom: inherit;
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        .move {margin-right: 40px;}
+        .icon-image{
+            display: flex;
+            align-items: center;
+            img {
+                width: 225px;
+                height: auto;
+            }
+        }   
+    }
 }
 #card3 {
     background-color: #B9F3FB;
     width: 33.33%;
+    .gray {color: var.$gray;}
+    img {
+        width: 100%;
+        margin-top: 25px;
+    }
 }

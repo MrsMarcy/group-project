@@ -184,13 +184,40 @@ body {
 }
 
 #card2 {
+  position: relative;
   background-image: url(/images/lime.png);
   background-repeat: no-repeat;
   background-size: cover;
   width: 33.33%;
 }
+#card2 .arrow {
+  position: absolute;
+  bottom: 0;
+  padding-bottom: inherit;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+#card2 .arrow .move {
+  margin-right: 40px;
+}
+#card2 .arrow .icon-image {
+  display: flex;
+  align-items: center;
+}
+#card2 .arrow .icon-image img {
+  width: 225px;
+  height: auto;
+}
 
 #card3 {
   background-color: #B9F3FB;
   width: 33.33%;
+}
+#card3 .gray {
+  color: #7B92A8;
+}
+#card3 img {
+  width: 100%;
+  margin-top: 25px;
 }/*# sourceMappingURL=style.css.map */
