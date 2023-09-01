@@ -12,7 +12,7 @@
   background-color: black;
 }
 
-.homebar .webConnect .connectWal, #card1 > button {
+.homebar .webConnect .connectWal, #card1 .hold > button {
   cursor: pointer;
   color: white;
   background: none;
@@ -22,7 +22,7 @@
   border-radius: 50px;
   display: inline-block;
 }
-.homebar .webConnect .connectWal:hover, #card1 > button:hover {
+.homebar .webConnect .connectWal:hover, #card1 .hold > button:hover {
   color: #183f65;
   background-color: white;
 }
@@ -188,7 +188,7 @@ body {
   width: 33.33%;
   padding: auto 200px;
 }
-#card1 > button {
+#card1 .hold > button {
   font-size: 27px;
 }
 

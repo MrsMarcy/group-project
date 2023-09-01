@@ -178,7 +178,7 @@ body {
     color: white;
     width: 33.33%;
     padding: auto 200px;
-    >button {
+    .hold > button {
         @extend %whitebutton;
         font-size: 27px;
     }
