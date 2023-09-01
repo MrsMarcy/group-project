@@ -163,7 +163,7 @@ body {
 }
 
 .cards {
-    height: 100%;
+
     border:var.$cardB;
     border-radius: var.$cardR;
     padding: 75px;
@@ -178,13 +178,13 @@ body {
         @extend %whitebutton;
         font-size: 27px;
     }
+    }
     .bottom-tag {
         color: #7B92A8;
         position: absolute;
         bottom: 0;
         padding-bottom: inherit;
     }
-}
 #card2 {
     background-image: url(/images/lime.png);
     background-repeat: no-repeat;
