@@ -3,3 +3,11 @@ $Raleway: 'Raleway';
 $cardB: 2px solid black;
 $cardR: 10px;
 $maxWidth: 400px;
+
+%greenButton {
+    background-color: #68FFB6;
+    height: fit-content;
+    border-radius: 25px;
+    font-size: .75rem;
+    position: relative;
+}

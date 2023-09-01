@@ -1,8 +1,14 @@
 @use "var";
-* {margin:0; padding:0;border:0;}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
 body {
     font-family: var.$Heebo;
-    
+
     background: url(images/back-color.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -19,7 +25,9 @@ body {
     width: 90%;
 }
 
-.homebar, .sideBar, .card-holder, .titleHolder {
+.homebar,
+.sideBar,
+.card-holder {
     border: 2px solid black;
 }
 
@@ -28,39 +36,57 @@ body {
 /* main card*/
 
 .titleHolder {
-    margin: 100px 50px 200px 50px;
+    margin: 100px 50px 280px 50px;
     display: flex;
     justify-content: space-between;
     position: relative;
 }
-.titleHolder > img {
+
+.titleHolder>img {
     position: absolute;
     width: 400px;
-    top: -100px;
+    top: -40px;
     right: 20px;
     z-index: -1;
 }
+
 .titleHolderBox {
     width: 60%;
     display: flex;
     justify-content: center;
-    width: 780px;
+    width: 800px;
 }
 
 .titleHolderBox img {
     position: absolute;
-    bottom: -40px;
-    left: 10px;
-    width: 200px;
+    bottom: -130px;
+    left: -5px;
+    width: 270px;
     z-index: -1;
 }
 
 .titleHolderBox h1 {
-    font-size: 4.2em;
+    font-size: 4.3em;
+    line-height: 1.2em;
     color: white;
-    transform: scale(2,1);
+    transform: scale(2, 1);
     width: fit-content;
+}
 
+.titleHolder>button {
+    @extend %greenButton;
+    padding: 10px 20px;
+    bottom: 10px;
+    right: 20px
+}
+
+.titleHolderBox button {
+    @extend %greenButton;
+    transform: scale(1, 2);
+    font-size: .37rem;
+    position: relative;
+    bottom: 27px;
+    padding: 11px 18px;
 
 }
 
@@ -68,6 +94,7 @@ body {
 .card-holder {
     display: inline-flex;
 }
+
 .cards {
     max-width: 400px;
     height: 300px;
@@ -75,18 +102,22 @@ body {
     border-radius: var.$cardR;
     padding: 60px;
 }
+
 #card1 {
     color: white;
     width: 400px;
+
     .bottom-tag {
         color: #7B92A8;
     }
 }
+
 #card2 {
     background-image: url(/images/lime.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 #card3 {
     background-color: #B9F3FB;
     width: 400px;
