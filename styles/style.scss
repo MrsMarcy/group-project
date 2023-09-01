@@ -75,6 +75,13 @@ body {
             color: white;
         }
     }
+
+    .webConnect{
+        flex-grow: 1;
+        .connectWal{
+            @extend %whitebutton
+        }
+    }
     
 }
 
@@ -168,15 +175,8 @@ body {
     width: 33.33%;
     padding: auto 200px;
     >button {
-        cursor: pointer;
-        color: white;
-        background: none;
+        @extend %whitebutton;
         font-size: 27px;
-        padding: 10px 25px;
-        margin: 5px 3px;
-        border: 1px white solid;
-        border-radius: 50px;
-        display: inline-block;
     }
     .bottom-tag {
         color: #7B92A8;

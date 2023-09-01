@@ -5,6 +5,26 @@
   border-radius: 25px;
   font-size: 0.75rem;
   position: relative;
+  border: 1px #68FFB6 solid;
+}
+.titleHolder > button:hover, .titleHolderBox button:hover {
+  color: #68FFB6;
+  background-color: black;
+}
+
+.homebar .webConnect .connectWal, #card1 > button {
+  cursor: pointer;
+  color: white;
+  background: none;
+  padding: 10px 25px;
+  margin: 5px 3px;
+  border: 1px white solid;
+  border-radius: 50px;
+  display: inline-block;
+}
+.homebar .webConnect .connectWal:hover, #card1 > button:hover {
+  color: #183f65;
+  background-color: white;
 }
 
 * {
@@ -78,7 +98,9 @@ body {
   text-decoration: none;
   color: white;
 }
-
+.homebar .webConnect {
+  flex-grow: 1;
+}
 .contentHolder {
   display: flex;
   flex-direction: column;
@@ -165,15 +187,7 @@ body {
   padding: auto 200px;
 }
 #card1 > button {
-  cursor: pointer;
-  color: white;
-  background: none;
   font-size: 27px;
-  padding: 10px 25px;
-  margin: 5px 3px;
-  border: 1px white solid;
-  border-radius: 50px;
-  display: inline-block;
 }
 #card1 .bottom-tag {
   color: #7B92A8;
