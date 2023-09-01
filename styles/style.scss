@@ -73,6 +73,17 @@ body {
         a{
             text-decoration: none;
             color: white;
+             
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .webConnect{
+        flex-grow: 1;
+        .connectWal{
+            @extend %whitebutton
         }
     }
     
@@ -165,19 +176,10 @@ body {
     position: relative;
     color: white;
     width: 33.33%;
-    .hold{
-        margin-bottom: 150px;
-       button {
-        cursor: pointer;
-        color: white;
-        background: none;
+    padding: auto 200px;
+    >button {
+        @extend %whitebutton;
         font-size: 27px;
-        padding: 10px 25px;
-        margin: 5px 3px;
-        border: 1px white solid;
-        border-radius: 50px;
-        display: inline-block; 
-    }
     }
     .bottom-tag {
         color: var.$gray;

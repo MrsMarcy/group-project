@@ -11,4 +11,26 @@ $gray: #7B92A8;
     border-radius: 25px;
     font-size: .75rem;
     position: relative;
+    border: 1px #68FFB6 solid;
+
+    &:hover{
+        color: #68FFB6;
+        background-color: black;
+    }
+}
+
+%whitebutton{
+    cursor: pointer;
+    color: white;
+    background: none;
+    padding: 10px 25px;
+    margin: 5px 3px;
+    border: 1px white solid;
+    border-radius: 50px;
+    display: inline-block;
+
+    &:hover{
+        color: #183f65;
+        background-color: white;
+    }
 }
