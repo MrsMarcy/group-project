@@ -15,7 +15,7 @@
 
 body {
   font-family: "Heebo";
-  background: url(images/back-color.png);
+  background: url(/images/back-color.png);
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -58,7 +58,7 @@ body {
 /* nav bar*/
 /* main card*/
 .titleHolder {
-  margin: 100px 50px 280px 50px;
+  margin: 100px 50px 260px 50px;
   display: flex;
   justify-content: space-between;
   position: relative;
@@ -66,7 +66,7 @@ body {
 
 .titleHolder > img {
   position: absolute;
-  width: 400px;
+  width: 390px;
   top: -40px;
   right: 20px;
   z-index: -1;
