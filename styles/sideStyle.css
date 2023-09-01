@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  font-family: "Heebo";
+  background: url(/images/back-color.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+}
+
+.sideBar {
+  width: 5%;
+}
+
+.contentHolder {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+}
+
+.homebar, .sideBar, .mainCard {
+  border: 2px solid black;
+}/*# sourceMappingURL=sideStyle.css.map */
