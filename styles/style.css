@@ -116,15 +116,20 @@ body {
 
 /* nav bar*/
 /* main card*/
+.mainCard {
+  display: flex;
+  justify-content: center;
+}
+
 .titleHolder {
-  margin: 100px 50px 250px 50px;
+  margin: 100px 0;
   display: flex;
   justify-content: space-between;
+  flex-direction: row-reverse;
   position: relative;
 }
 
 .titleHolder > img {
-  position: absolute;
   width: 370px;
   top: -40px;
   right: 20px;
@@ -134,12 +139,12 @@ body {
 .titleHolderBox {
   width: 60%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   width: 800px;
 }
 
 .titleHolderBox img {
-  position: absolute;
   bottom: -130px;
   left: -5px;
   width: 270px;
@@ -151,6 +156,7 @@ body {
   line-height: 1.2em;
   color: white;
   transform: scale(2, 1);
+  transform-origin: left;
   width: -moz-fit-content;
   width: fit-content;
 }
