@@ -1,19 +1,19 @@
 @use "var";
 
 * {
-    margin: 0;
-    padding: 0;
-    border: 0;
+    @extend %mpdZero;
 }
 
 body {
     font-family: var.$Heebo;
-
     background: url(/images/back-color.png);
     background-repeat: no-repeat;
     background-size: cover;
+    overflow: hidden;
     display: flex;
 }
+
+/* nav bar*/
 
 .sideBar{
     width: 5%;
@@ -53,10 +53,9 @@ body {
 }
 
 .homebar{
-    display: flex;
     padding: 0% 5%;
     justify-content: space-around;
-    align-items: center;
+    @extend %aliFlex;
     gap: 5%;
     .logo{
         flex-grow: 3;
@@ -89,7 +88,6 @@ body {
     
 }
 
-
 .contentHolder {
     display: flex;
     flex-direction: column;
@@ -98,62 +96,52 @@ body {
 
 .homebar,.sideBar, .mainCard{
     border: var.$cardB;
+    border-radius: var.$cardR;
 }
-
-/* nav bar*/
 
 /* main card*/
 
 .mainCard {
-    display: flex;
-    justify-content: center;
+    @extend %jusFlex;
 }
 .titleHolder {
-    margin: 100px 0;
+    margin: 60px 0 100px 0;
     display: flex;
     justify-content: space-between;
     flex-direction: row-reverse;
     position: relative;
 }
 
+.titleHolder>button {
+    @extend %greenButton;
+    position: absolute;
+    padding: 9px 20px;
+    top: 18px;
+    right: 50px;
+}
+
 .titleHolder > img {
-    // position: absolute;
-    width: 370px;
-    top: -40px;
+    width: 380px;
+    position: relative;
     right: 20px;
     z-index: -1;
 }
 
 .titleHolderBox {
-    width: 60%;
-    display: flex;
+    @extend %jusFlex;
     flex-direction: column;
-    justify-content: center;
     width: 800px;
 }
 
-.titleHolderBox img {
-    // position: absolute;
-    bottom: -130px;
-    left: -5px;
-    width: 270px;
-    z-index: -1;
-}
-
 .titleHolderBox h1 {
-    font-size: 4.3em;
+    font-size: 5em;
     line-height: 1.2em;
+    width: max-content;
     color: white;
     transform: scale(2, 1);
     transform-origin: left;
-    width: fit-content;
-}
-
-.titleHolder>button {
-    @extend %greenButton;
-    padding: 10px 20px;
-    bottom: 10px;
-    right: 20px
+    position: relative;
+    left: 20px
 }
 
 .titleHolderBox button {
@@ -162,8 +150,15 @@ body {
     font-size: .37rem;
     position: relative;
     bottom: 27px;
-    padding: 11px 18px;
+    padding: 12px 18px;
+}
 
+.titleHolderBox img {
+    width: 290px;
+    z-index: -1;
+    position: relative;
+    left: 10px;
+    bottom: -25px;
 }
 
 /* side cards*/
@@ -206,12 +201,10 @@ body {
         bottom: 0;
         padding-bottom: inherit;
         font-size: 18px;
-        display: flex;
-        align-items: center;
+        @extend %aliFlex;
         .move {margin-right: 40px;}
         .icon-image{
-            display: flex;
-            align-items: center;
+            @extend %aliFlex;
             img {
                 width: 225px;
                 height: auto;

@@ -5,6 +5,22 @@ $cardR: 10px;
 $maxWidth: 400px;
 $gray: #7B92A8;
 
+%mpdZero {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+%jusFlex {
+    display: flex;
+    justify-content: center;
+}
+
+%aliFlex {
+    display: flex;
+    justify-content: center;
+}
+
 %greenButton {
     background-color: #68FFB6;
     height: fit-content;
