@@ -21,7 +21,6 @@
   border-radius: 25px;
   font-size: 0.75rem;
   position: relative;
-  border: 1px #68FFB6 solid;
   z-index: 1;
 }
 .titleHolder > button:hover, .titleHolderBox button:hover {
@@ -52,7 +51,7 @@ body {
 
 /* nav bar*/
 .sideBar {
-  width: 5%;
+  width: 3%;
   height: inherit;
   display: flex;
   flex-flow: column nowrap;
@@ -74,7 +73,8 @@ body {
   justify-content: center;
   align-items: center;
   margin: 0;
-  padding-top: 50%;
+  padding-top: 100%;
+  padding-left: 50%;
   border: 0;
   height: 80px;
   width: 100px;
@@ -89,11 +89,17 @@ body {
 .homebar {
   padding: 0% 5%;
   justify-content: space-around;
+  align-items: center;
   gap: 5%;
 }
 .homebar .logo {
   flex-grow: 3;
+  padding: 15px 0;
+}
+.homebar .logo a {
   color: white;
+  text-decoration: none;
+  padding: 15px 0;
 }
 .homebar nav {
   display: inline-flex;

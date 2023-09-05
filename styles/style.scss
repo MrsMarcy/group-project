@@ -16,7 +16,7 @@ body {
 /* nav bar*/
 
 .sideBar{
-    width: 5%;
+    width: 3%;
     height: inherit;
     display: flex;
     flex-flow: column nowrap;
@@ -38,7 +38,8 @@ body {
         justify-content: center;
         align-items: center;
         margin: 0;
-        padding-top: 50%;
+        padding-top: 100%;
+        padding-left: 50%;
         border: 0;
         height: 80px;
         width: 100px;
@@ -55,11 +56,20 @@ body {
 .homebar{
     padding: 0% 5%;
     justify-content: space-around;
+    align-items: center;
     @extend %aliFlex;
     gap: 5%;
     .logo{
         flex-grow: 3;
-        color: white;
+        padding: 15px 0;
+
+        a{
+            color: white;
+            text-decoration: none;
+            padding: 15px 0;
+        }
+        
+
     }
 
     nav{

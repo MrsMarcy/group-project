@@ -33,7 +33,7 @@ body {
 // navs
 
 .sideBar{
-    width: 5%;
+    width: 3%;
     height: inherit;
     display: flex;
     flex-flow: column nowrap;
@@ -77,8 +77,13 @@ body {
     gap: 5%;
     .logo{
         flex-grow: 3;
-        color: white;
         padding: 15px 0;
+
+        a{
+            color: white;
+            text-decoration: none;
+            
+        }
     }
 
     nav{
