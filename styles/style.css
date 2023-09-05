@@ -9,7 +9,7 @@
   justify-content: center;
 }
 
-.homebar, #card2 .arrow, #card2 .arrow .icon-image {
+#card2 .arrow, #card2 .arrow .icon-image {
   display: flex;
   justify-content: center;
 }
@@ -58,7 +58,7 @@ body {
   justify-content: space-evenly;
   align-items: center;
   color: white;
-  padding: 2% 0%;
+  padding: 4.3vh 0%;
 }
 .sideBar .menuIcon {
   flex-grow: 1;
@@ -88,6 +88,7 @@ body {
 
 .homebar {
   padding: 0% 5%;
+  display: flex;
   justify-content: space-around;
   align-items: center;
   gap: 5%;
@@ -100,23 +101,28 @@ body {
   color: white;
   text-decoration: none;
   padding: 15px 0;
+  font-size: 26pt;
 }
 .homebar nav {
   display: inline-flex;
   justify-content: space-evenly;
   align-items: center;
-  gap: 2%;
+  gap: 4.5%;
   flex-grow: 2;
 }
 .homebar nav a {
   text-decoration: none;
   color: white;
+  font-size: 15pt;
 }
 .homebar nav a:hover {
   text-decoration: underline;
 }
 .homebar .webConnect {
   flex-grow: 1;
+  display: flex;
+  align-items: center;
+  gap: 3%;
 }
 .contentHolder {
   display: flex;
