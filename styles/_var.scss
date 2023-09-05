@@ -1,9 +1,10 @@
 $Heebo: 'Heebo';
 $Raleway: 'Raleway';
-$cardB: 2px solid black;
+$cardB: 1px solid black;
 $cardR: 10px;
 $maxWidth: 400px;
 $gray: #7B92A8;
+$backColor: #194166;
 
 %mpdZero {
     margin: 0;
@@ -28,7 +29,7 @@ $gray: #7B92A8;
     font-size: .75rem;
     position: relative;
     border: 1px #68FFB6 solid;
-
+    z-index: 1;
     &:hover{
         color: #68FFB6;
         background-color: black;

@@ -6,10 +6,10 @@
 
 body {
     font-family: var.$Heebo;
-    background: url(/images/back-color.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    overflow: hidden;
+    // background: url(/images/back-color.png);
+    background-color: black;
+    // background-repeat: no-repeat;
+    // background-size: cover;
     display: flex;
 }
 
@@ -94,9 +94,10 @@ body {
     width: 95%;
 }
 
-.homebar,.sideBar, .mainCard{
+.homebar,.sideBar, .mainCard, #card1{
     border: var.$cardB;
     border-radius: var.$cardR;
+    background-color: var.$backColor;
 }
 
 /* main card*/
@@ -124,7 +125,6 @@ body {
     width: 380px;
     position: relative;
     right: 20px;
-    z-index: -1;
 }
 
 .titleHolderBox {
@@ -155,7 +155,6 @@ body {
 
 .titleHolderBox img {
     width: 290px;
-    z-index: -1;
     position: relative;
     left: 10px;
     bottom: -25px;

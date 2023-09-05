@@ -28,12 +28,14 @@ body {
   font-family: "Heebo";
   background-color: black;
   display: flex;
+  height: 100%;
 }
 
 .contentHolder {
   display: flex;
   flex-direction: column;
   width: 95%;
+  height: 100%;
 }
 
 .homebar, .sideBar, .mainCard, .cards {
@@ -44,7 +46,6 @@ body {
 
 .sideBar {
   width: 5%;
-  height: inherit;
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-evenly;
@@ -106,27 +107,15 @@ body {
 }
 .card-holder {
   display: flex;
-}
-
-.card-holder-row {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  width: 95%;
+  width: 100%;
+  height: 100%;
 }
 
 .cards {
   border: 1px solid black;
   border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 30%;
+  padding: 75px;
+  width: 33.33%;
   color: white;
-  width: 99%;
-  flex-grow: 1;
-}
-
-.cards > img {
-  width: auto;
+  height: 100%;
 }/*# sourceMappingURL=sideStyle.css.map */

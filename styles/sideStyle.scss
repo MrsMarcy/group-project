@@ -6,11 +6,13 @@
 
 body {
     font-family: var.$Heebo;
-    background: url(/images/back-color.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+    // background: url(/images/back-color.png);
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    background-color: black;
     display: flex;
-    // height: max-content;
+    // height: 100%;
+
 }
 
 
@@ -18,11 +20,13 @@ body {
     display: flex;
     flex-direction: column;
     width: 95%;
+
 }
 
-.homebar,.sideBar, .mainCard{
+.homebar,.sideBar, .mainCard, .cards{
     border: var.$cardB;
     border-radius: var.$cardR;
+    background-color: var.$backColor;
 }
 
 // navs
@@ -36,6 +40,8 @@ body {
     align-items: center;
     color: white;
     padding: 2% 0%;
+    // min-height: 100vh;
+    // max-height: min-content;
     
     .menuIcon{
         flex-grow: 1;
@@ -101,11 +107,15 @@ body {
     
 }
 
-
-
 .card-holder {
-    display: inline-flex;
-    width: 100%;
+    display: flex;
+}
+
+.card-holder-row {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 95%;
     
     
 }
@@ -113,19 +123,19 @@ body {
 .cards {
     border:var.$cardB;
     border-radius: var.$cardR;
-    padding: 75px;
-    font-size: 27px;
-    width: 33.33%;
-    color: white;
-    // padding: auto 200px;
-    position: relative;
     
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // font-size: 27px;
+    width: 30%;
+    color: white;
+    width: 99%;
+    flex-grow: 1;
 }
 
-#card12 {
-    box-shadow: 0 0 0 3px black;
-    position: relative;
-    z-index: -2;
-
+.cards > img {
+    width: auto;
+    
 }
 
