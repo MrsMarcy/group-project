@@ -6,7 +6,7 @@
 
 .homebar {
   display: flex;
-  justify-content: center;
+  align-content: center;
 }
 
 #exploreBox button {
@@ -46,7 +46,7 @@
 
 .homebar {
   display: flex;
-  justify-content: center;
+  align-content: center;
 }
 
 #exploreBox button {

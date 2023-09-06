@@ -11,7 +11,7 @@
 
 .homebar, #card2 .arrow, #card2 .arrow .icon-image {
   display: flex;
-  justify-content: center;
+  align-content: center;
 }
 
 .titleHolder > button, .titleHolderBox button {
@@ -56,7 +56,7 @@
 
 #card2 .arrow .icon-image, #card2 .arrow, .homebar {
   display: flex;
-  justify-content: center;
+  align-content: center;
 }
 
 .titleHolderBox button, .titleHolder > button {
@@ -269,6 +269,7 @@ body {
   width: 33.33%;
 }
 #card2 .arrow {
+  width: 100%;
   position: absolute;
   bottom: 0;
   padding-bottom: inherit;
@@ -277,9 +278,13 @@ body {
 #card2 .arrow .move {
   margin-right: 40px;
 }
-#card2 .arrow .icon-image img {
-  width: 225px;
-  height: auto;
+#card2 .arrow .icon-image div {
+  width: 100%;
+  height: 100%;
+}
+#card2 .arrow .icon-image div img {
+  height: 75px;
+  width: 175px;
 }
 
 #card3 {
