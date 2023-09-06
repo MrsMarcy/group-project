@@ -18,7 +18,7 @@
   background-color: #68FFB6;
   height: -moz-fit-content;
   height: fit-content;
-  border-radius: 25px;
+  border-radius: 50px;
   font-size: 0.75rem;
   position: relative;
   z-index: 1;
@@ -43,13 +43,74 @@
   background-color: white;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.titleHolderBox, .mainCard {
+  display: flex;
+  justify-content: center;
+}
+
+#card2 .arrow .icon-image, #card2 .arrow, .homebar {
+  display: flex;
+  justify-content: center;
+}
+
+.titleHolderBox button, .titleHolder > button {
+  background-color: #68FFB6;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 50px;
+  font-size: 0.75rem;
+  position: relative;
+  z-index: 1;
+}
+
+.titleHolderBox button:hover, .titleHolder > button:hover {
+  color: #68FFB6;
+  background-color: black;
+}
+
+#card1 .hold > button, .homebar .webConnect .connectWal {
+  cursor: pointer;
+  color: white;
+  background: none;
+  padding: 10px 25px;
+  margin: 5px 3px;
+  border: 1px white solid;
+  border-radius: 50px;
+  display: inline-block;
+}
+
+#card1 .hold > button:hover, .homebar .webConnect .connectWal:hover {
+  color: #183f65;
+  background-color: white;
+}
+
 body {
   font-family: "Heebo";
   background-color: black;
   display: flex;
 }
 
-/* nav bar*/
+.contentHolder {
+  display: flex;
+  flex-direction: column;
+  width: 97%;
+}
+
+.homebar,
+.sideBar,
+.mainCard,
+#card1 {
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: #194166;
+}
+
 .sideBar {
   width: 3%;
   height: inherit;
@@ -124,19 +185,6 @@ body {
   align-items: center;
   gap: 3%;
 }
-.contentHolder {
-  display: flex;
-  flex-direction: column;
-  width: 95%;
-}
-
-.homebar, .sideBar, .mainCard, #card1 {
-  border: 1px solid black;
-  border-radius: 10px;
-  background-color: #194166;
-}
-
-/* main card*/
 .titleHolder {
   margin: 60px 0 100px 0;
   display: flex;
@@ -190,7 +238,6 @@ body {
   bottom: -25px;
 }
 
-/* side cards*/
 .card-holder {
   display: inline-flex;
   width: 100%;

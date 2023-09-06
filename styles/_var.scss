@@ -25,17 +25,18 @@ $backColor: #194166;
 %greenButton {
     background-color: #68FFB6;
     height: fit-content;
-    border-radius: 25px;
+    border-radius: 50px;
     font-size: .75rem;
     position: relative;
     z-index: 1;
-    &:hover{
+
+    &:hover {
         color: #68FFB6;
         background-color: black;
     }
 }
 
-%whitebutton{
+%whitebutton {
     cursor: pointer;
     color: white;
     background: none;
@@ -45,7 +46,7 @@ $backColor: #194166;
     border-radius: 50px;
     display: inline-block;
 
-    &:hover{
+    &:hover {
         color: #183f65;
         background-color: white;
     }
