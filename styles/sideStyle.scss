@@ -53,7 +53,7 @@ body {
         justify-content: center;
         align-items: center;
         margin: 0;
-        padding-top: 50%;
+        padding-top: 100%;
         border: 0;
         height: 80px;
         width: 100px;
@@ -141,6 +141,7 @@ body {
     object-fit: contain;
     max-width: 35%;
     height: 60%;
+    z-index: 2;
 }
 
 #exploreBox {
@@ -191,7 +192,23 @@ body {
     color: black;
 }
 
+.BID {
+    position: relative;
+    justify-content: center;
+    gap: 50px;
+}
+
 .BID button {
     @extend %whitebutton;
     font-size: 1.6em;
+}
+
+.BID > div {
+    @extend %greenButton;
+    color: black;
+    padding: 10px;
+    position: absolute;
+    top: 50px;
+    right: 40px;
+    z-index: 1;
 }

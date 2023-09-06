@@ -34,9 +34,10 @@ body {
     justify-content: space-evenly;
     align-items: center;
     color: white;
-    padding: 2% 0%;
-
-    .menuIcon {
+    padding: 4.3vh 0%;
+    
+    
+    .menuIcon{
         flex-grow: 1;
         width: fit-content;
     }
@@ -67,9 +68,9 @@ body {
 
 .homebar {
     padding: 0% 5%;
+    display: flex;
     justify-content: space-around;
     align-items: center;
-    @extend %aliFlex;
     gap: 5%;
 
     .logo {
@@ -80,6 +81,7 @@ body {
             color: white;
             text-decoration: none;
             padding: 15px 0;
+            font-size: 26pt;
         }
     }
 
@@ -87,14 +89,15 @@ body {
         display: inline-flex;
         justify-content: space-evenly;
         align-items: center;
-        gap: 2%;
+        gap: 4.5%;
         flex-grow: 2;
 
         a {
             text-decoration: none;
             color: white;
-
-            &:hover {
+            font-size: 15pt;
+             
+            &:hover{
                 text-decoration: underline;
             }
         }
@@ -102,9 +105,17 @@ body {
 
     .webConnect {
         flex-grow: 1;
-
-        .connectWal {
-            @extend %whitebutton;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 3%;
+        .connectWal{
+            @extend %whitebutton
+        }
+        .webIcon{
+            width: 20px;
+            height: 24px;
+             
         }
     }
 
