@@ -1,4 +1,5 @@
 @use "var";
+@use "mixin";
 
 * {
     @extend %mpdZero;
@@ -101,7 +102,7 @@ body {
 .contentHolder {
     display: flex;
     flex-direction: column;
-    width: 95%;
+    width: 97%;
 }
 
 .homebar,.sideBar, .mainCard, #card1{
