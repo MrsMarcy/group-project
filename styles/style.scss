@@ -1,5 +1,5 @@
 @use "var";
-@use "mixin";
+@import "mixin";
 
 * {
     @extend %mpdZero;
@@ -17,15 +17,16 @@ body {
     width: 97%;
 }
 
-.homebar,.sideBar, .mainCard, #card1{
-    border: var.$cardB;
-    border-radius: var.$cardR;
-    background-color: var.$backColor;
+.homebar,
+.sideBar,
+.mainCard,
+#card1 {
+    @include borders;
 }
 
 //nav bar
 
-.sideBar{
+.sideBar {
     width: 3%;
     height: inherit;
     display: flex;
@@ -34,16 +35,17 @@ body {
     align-items: center;
     color: white;
     padding: 2% 0%;
-    
-    .menuIcon{
+
+    .menuIcon {
         flex-grow: 1;
         width: fit-content;
     }
-    .pageCount{
+
+    .pageCount {
         flex-grow: 2;
     }
 
-    .trademark{
+    .trademark {
         display: inline-flex;
         justify-content: center;
         align-items: center;
@@ -54,8 +56,8 @@ body {
         height: 80px;
         width: 100px;
         transform: rotate(-90deg);
-        
-        span{
+
+        span {
             display: inline-block;
             width: 100px;
             height: 80px;
@@ -63,55 +65,57 @@ body {
     }
 }
 
-.homebar{
+.homebar {
     padding: 0% 5%;
     justify-content: space-around;
     align-items: center;
     @extend %aliFlex;
     gap: 5%;
-    .logo{
+
+    .logo {
         flex-grow: 3;
         padding: 15px 0;
 
-        a{
+        a {
             color: white;
             text-decoration: none;
             padding: 15px 0;
         }
-        
-
     }
 
-    nav{
+    nav {
         display: inline-flex;
         justify-content: space-evenly;
         align-items: center;
         gap: 2%;
         flex-grow: 2;
 
-        a{
+        a {
             text-decoration: none;
             color: white;
-             
-            &:hover{
+
+            &:hover {
                 text-decoration: underline;
             }
         }
     }
 
-    .webConnect{
+    .webConnect {
         flex-grow: 1;
-        .connectWal{
-            @extend %whitebutton
+
+        .connectWal {
+            @extend %whitebutton;
         }
     }
-    
+
 }
 
+//main card
 
 .mainCard {
     @extend %jusFlex;
 }
+
 .titleHolder {
     margin: 60px 0 100px 0;
     display: flex;
@@ -128,7 +132,7 @@ body {
     right: 50px;
 }
 
-.titleHolder > img {
+.titleHolder>img {
     width: 380px;
     position: relative;
     right: 20px;
@@ -167,61 +171,76 @@ body {
     bottom: -25px;
 }
 
-/* side cards*/
+// bottom cards
+
 .card-holder {
     display: inline-flex;
     width: 100%;
-    
 }
 
 .cards {
-    border:var.$cardB;
+    border: var.$cardB;
     border-radius: var.$cardR;
     padding: 75px;
     font-size: 27px;
 }
+
 #card1 {
     position: relative;
     color: white;
     width: 33.33%;
     padding: auto 200px;
-    .hold > button {
+
+    .hold>button {
         @extend %whitebutton;
         font-size: 27px;
     }
-    }
-    .bottom-tag {
-        color: var.$gray;
-        position: absolute;
-        bottom: 0;
-        padding-bottom: inherit;
-    }
+}
+
+.bottom-tag {
+    color: var.$gray;
+    position: absolute;
+    bottom: 0;
+    padding-bottom: inherit;
+}
+
 #card2 {
     position: relative;
     background-image: url(/images/lime.png);
     background-repeat: no-repeat;
     background-size: cover;
     width: 33.33%;
+
     .arrow {
         position: absolute;
         bottom: 0;
         padding-bottom: inherit;
         font-size: 18px;
         @extend %aliFlex;
-        .move {margin-right: 40px;}
-        .icon-image{
+
+        .move {
+            margin-right: 40px;
+        }
+
+        .icon-image {
             @extend %aliFlex;
+
             img {
                 width: 225px;
                 height: auto;
             }
-        }   
+        }
     }
 }
+
 #card3 {
     background-color: #B9F3FB;
     width: 33.33%;
-    .gray {color: var.$gray;}
+
+    .gray {
+        color: var.$gray;
+    }
+
     img {
         width: 100%;
         margin-top: 25px;

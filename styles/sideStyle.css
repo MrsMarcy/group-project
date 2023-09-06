@@ -94,7 +94,10 @@ body {
   height: 100vh;
 }
 
-.homebar, .sideBar, .mainCard, .cards {
+.homebar,
+.sideBar,
+.mainCard,
+.cards {
   border: 1px solid black;
   border-radius: 10px;
   background-color: #194166;
@@ -219,7 +222,9 @@ body {
   font-size: 1.5vw;
 }
 
-#exploreBox h1, #exploreBox p, #exploreBox button {
+#exploreBox h1,
+#exploreBox p,
+#exploreBox button {
   margin: 0 40px;
 }
 
@@ -237,7 +242,8 @@ body {
   gap: 15%;
 }
 
-#create button, #invest button {
+#create button,
+#invest button {
   background-color: black;
   color: white;
   height: -moz-fit-content;
@@ -249,12 +255,14 @@ body {
   padding: 20px 40px;
   font-size: 1vw;
 }
-#create button:hover, #invest button:hover {
+#create button:hover,
+#invest button:hover {
   color: white;
   background-color: #194166;
 }
 
-#create h1, #invest h1 {
+#create h1,
+#invest h1 {
   font-size: 25px;
   color: black;
 }

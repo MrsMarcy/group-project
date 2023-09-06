@@ -6,7 +6,6 @@ $maxWidth: 400px;
 $gray: #7B92A8;
 $backColor: #194166;
 
-
 %mpdZero {
     margin: 0;
     padding: 0;
@@ -30,13 +29,14 @@ $backColor: #194166;
     font-size: .75rem;
     position: relative;
     z-index: 1;
-    &:hover{
+
+    &:hover {
         color: #68FFB6;
         background-color: black;
     }
 }
 
-%whitebutton{
+%whitebutton {
     cursor: pointer;
     color: white;
     background: none;
@@ -46,7 +46,7 @@ $backColor: #194166;
     border-radius: 50px;
     display: inline-block;
 
-    &:hover{
+    &:hover {
         color: #183f65;
         background-color: white;
     }

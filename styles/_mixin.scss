@@ -1,6 +1,6 @@
 @use "var";
 
-@mixin invert-GreenB($back-color,$color,$hov-color,$hov-back-color) {
+@mixin invert-GreenB($back-color, $color, $hov-color, $hov-back-color) {
     background-color: $back-color;
     color: $color;
     height: fit-content;
@@ -8,15 +8,22 @@
     font-size: .75rem;
     position: relative;
     z-index: 1;
-    &:hover{
+
+    &:hover {
         color: $hov-color;
         background-color: $hov-back-color;
     }
 }
 
-@mixin invest-create($back-color){
+@mixin invest-create($back-color) {
     background-color: $back-color;
     flex-direction: column;
     justify-content: center;
     gap: 15%;
+}
+
+@mixin borders {
+    border: var.$cardB;
+    border-radius: var.$cardR;
+    background-color: var.$backColor;
 }
