@@ -183,8 +183,27 @@ body {
   flex-grow: 1;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 3%;
 }
+.homebar .webConnect .webIcon {
+  width: 20px;
+  height: 24px;
+}
+
+.contentHolder {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+}
+
+.homebar, .sideBar, .mainCard, #card1 {
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: #194166;
+}
+
+/* main card*/
 .titleHolder {
   margin: 60px 0 100px 0;
   display: flex;
